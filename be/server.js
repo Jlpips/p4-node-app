@@ -8,7 +8,7 @@ const PORT = process.env.PORT;
 
 const app = express();
 connectDB();
-app.use(cors());
+app.use(cors({ origin: "https://p4-node-app-fe.vercel.app" }));
 app.use(express.json());
 app.use(helmet());
 
