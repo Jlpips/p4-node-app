@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:8000/api/v1/tickets/";
+const API_URL = `${process.env.REACT_APP_API_URL}/tickets`;
 
 const createTicket = async (ticketData, token) => {
   const config = {
